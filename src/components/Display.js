@@ -28,7 +28,7 @@ export default function Display() {
 
   return (
     <div>
-        {/* <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}/> */}
+        <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}/>
         {renderContent()}
     </div>
   );
