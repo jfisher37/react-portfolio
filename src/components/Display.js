@@ -5,6 +5,9 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 
 
+// import "../styles/portfolio.css";
+
+
 export default function Display() {
 
     const [currentPage, setCurrentPage] = useState("About")
