@@ -30,9 +30,15 @@ export default function Display() {
       }
 
   return (
-    <div>
+    <div className="new-container">
+      <div className="new-nav">
         <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+        </div>
+      <div className="new-content">
         {renderContent()}
+        </div>
+        <br></br>
+        <footer></footer>
     </div>
   );
 }

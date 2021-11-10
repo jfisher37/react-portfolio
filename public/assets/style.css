@@ -15,6 +15,24 @@
     line-height: 1.5em;
 }
 
+.new-content{
+    min-height: 100%;
+    margin-bottom: -40px;
+}
+
+footer{
+    height: 40px;
+    width: 100%;
+    background-color: var(--main-color);
+    bottom: 0;
+    position: relative;
+}
+
+.new-container{
+    height: 100%;
+    width: 100%;
+}
+
 h1{
     color: var(--background);
     font-size: 2em;
@@ -25,6 +43,7 @@ h1{
 body {
     height: 100%;
     background-color: var(--new-background) ;
+    margin: 0;
 }
 
 .navbar{
