@@ -32,6 +32,9 @@ export default function Nav({ currentPage, setCurrentPage }) {
           Contact Me
         </a>
       </li>
+      <li>
+        <a href="assets/Resume_Coding.pdf" target="_blank">Resume</a>
+      </li>
     </ul>
   );
 }
