@@ -34,6 +34,7 @@ export default function Display() {
       <div className="new-nav">
         <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}/>
         </div>
+        <br></br>
       <div className="new-content">
         {renderContent()}
         </div>

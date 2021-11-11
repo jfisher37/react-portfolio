@@ -25,7 +25,16 @@
 
 .new-content{
     min-height: 100%;
-    margin-bottom: -40px;
+    margin-bottom: 10px;
+    
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
 }
 
 footer{
@@ -379,10 +388,10 @@ border-right: 2px solid var(--body-text);
     
     }
     
-    .contact-links {
+    /* .contact-links {
         font-size: .8em;
         font-weight: 600;
-    }
+    } */
 
     .app-title{
         font-size: auto;
@@ -441,11 +450,11 @@ border-right: 2px solid var(--body-text);
          text-align: right;
      
      }
-     
+/*      
      .contact-links {
          font-size: .8em;
          font-weight: 600;
-     }
+     } */
  
      .app-title{
         font-size: 1em;
@@ -459,10 +468,10 @@ border-right: 2px solid var(--body-text);
     
     }
 
-    .contact-links {
+    /* .contact-links {
         font-size: .7em;
         font-weight: 500;
-    }
+    } */
   }
   
   /* Adjustments made for small smartphones */
@@ -513,11 +522,11 @@ border-right: 2px solid var(--body-text);
         flex-wrap: wrap;
         
     }
-    .contact-links{
+    /* .contact-links{
         font-size: .7em;
         line-height: 3em;
        
-    }
+    } */
 
     
   }
