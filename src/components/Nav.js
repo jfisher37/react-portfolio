@@ -3,6 +3,7 @@ import React from "react";
 export default function Nav({ currentPage, setCurrentPage }) {
   return (
     <header>
+        <h1>Joey Fisher</h1>
     <ul id="nav">
       <li>
         <a
@@ -34,7 +35,7 @@ export default function Nav({ currentPage, setCurrentPage }) {
         </a>
       </li>
       <li>
-        <a href="assets/Resume_Coding.pdf" target="_blank">Resume</a>
+        <a href="assets/Resume_Coding.pdf" target="_blank" className="nav-link">Resume</a>
       </li>
     </ul>
     </header>
