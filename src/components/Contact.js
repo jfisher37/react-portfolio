@@ -43,11 +43,11 @@ export default function Contact() {
 
   return (
     <div>
-    <h1>Contact Info</h1>
+    <h1>Contact Me</h1>
     <br></br>
     <div>
       <form className="form">
-        <label for="email">Please enter your email address:</label>
+        <label for="email" className="central-content">Please enter your email address:</label>
         <br></br>
         <input
           value={email}
@@ -57,7 +57,7 @@ export default function Contact() {
           placeholder="Email"
         />
         <br></br>
-        <label for="userName">Please enter your name:</label>
+        <label for="userName" className="central-content">Please enter your name:</label>
         <br></br>
         <input
           value={userName}
@@ -67,7 +67,7 @@ export default function Contact() {
           placeholder="Name"
         />
         <br></br>
-        <label for="message">What would you like to tell me?</label>
+        <label for="message" className="central-content">What would you like to tell me?</label>
         <br></br>
         <textarea
           value={message}
@@ -79,9 +79,10 @@ export default function Contact() {
         <br></br>
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
+      <br></br>
       {errorMessage && (
         <div>
-          <p className="error-text">{errorMessage}</p>
+          <p className="central-content" id="contact-error-message">{errorMessage}</p>
         </div>
       )}
     </div>
