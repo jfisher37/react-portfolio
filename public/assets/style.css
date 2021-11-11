@@ -578,3 +578,18 @@ border-right: 2px solid var(--body-text);
 
     
   }
+
+  @media screen and (max-width: 500px) {
+    .app-title{
+        font-size: .4em;
+        padding: 10px 15px;
+        max-width: 60%;
+        }
+
+    .contact-links {
+        font-size: .6em;
+    }
+
+
+    
+  }
