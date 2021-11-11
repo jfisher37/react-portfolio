@@ -4,6 +4,7 @@ import n2t from '../images/new2town.png';
 import blog from '../images/tech_blog.png';
 import employee from '../images/employee_tracker.png';
 import ecommerce from '../images/ecommerce.png';
+import fitness from '../images/fitness.png';
 
 
 export default function Portfolio() {
@@ -23,19 +24,25 @@ export default function Portfolio() {
                         Got You Cupboard
                     </p>
                 </a>
-                <a href="https://github.com/jfisher37/tech-blog" id="app3" target="blank_" tabIndex="-1" className="portfolio-item">
+                <a href="https://github.com/jfisher37/fitness-tracker" id="app3" target="blank_" tabIndex="-1" className="portfolio-item">
+                    <img src={fitness} alt="Fitness Tracker webpage" className="app-imgs" tabIndex="0" /> 
+                    <p className="app-title">
+                        Fitness Tracker
+                    </p>
+                </a>
+                <a href="https://github.com/jfisher37/tech-blog" id="app4" target="blank_" tabIndex="-1" className="portfolio-item">
                     <img src={blog} alt="Tech Blog Webpage" className="app-imgs" tabIndex="0" />
                     <p className="app-title">
                         Tech Blog
                     </p>
                 </a>
-                <a href="https://github.com/jfisher37/employee-tracker" id="app4" target="blank_" tabIndex="-1" className="portfolio-item">
+                <a href="https://github.com/jfisher37/employee-tracker" id="app5" target="blank_" tabIndex="-1" className="portfolio-item">
                     <img src={employee} alt="employee tracker CLI" className="app-imgs" tabIndex="0" />
                     <p className="app-title">
                         Employee Tracker
                     </p>
                 </a>
-                <a href="https://github.com/jfisher37/e-commerce-back-end" id="app5" target="blank_" tabIndex="-1" className="portfolio-item">
+                <a href="https://github.com/jfisher37/e-commerce-back-end" id="app6" target="blank_" tabIndex="-1" className="portfolio-item">
                     <img src={ecommerce} alt="Code for an e-commerce back end" className="app-imgs" tabIndex="0" />
                     <p className="app-title">
                         E-commerce Back End
