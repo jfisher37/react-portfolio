@@ -9,11 +9,15 @@
 
 }
 /* Basic text settings */
+
+
 * {
     font-size: 16px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5em;
 }
+
+ 
 
 .new-content{
     min-height: 100%;
@@ -24,8 +28,10 @@ footer{
     height: 40px;
     width: 100%;
     background-color: var(--main-color);
-    bottom: 0;
-    position: relative;
+    bottom: 0px;
+    margin-bottom: -17px;
+    position: absolute;
+    
 }
 
 .new-container{
@@ -41,9 +47,10 @@ h1{
 }
 
 body {
-    height: 100%;
+    min-height: 100vh;
     background-color: var(--new-background) ;
     margin: 0;
+    position: relative;
 }
 
 .navbar{
