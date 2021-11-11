@@ -3,7 +3,7 @@ import React from "react";
 export default function Nav({ currentPage, setCurrentPage }) {
   return (
     <header>
-        <h1>Joey Fisher</h1>
+        <h1 id="title">Joey Fisher</h1>
     <ul id="nav">
       <li>
         <a

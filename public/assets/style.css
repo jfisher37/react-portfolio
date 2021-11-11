@@ -69,6 +69,14 @@ h1{
     border-bottom: dashed var(--main-color);
 }
 
+#title {
+    background-color: var(--body-text);
+    display: block;
+    border: unset;
+    text-align: center;
+    border-bottom: solid var(--new-background) 2px;
+}
+
 body {
     min-height: 100vh;
     background-color: var(--new-background) ;
@@ -328,13 +336,14 @@ border-right: 2px solid var(--body-text);
     text-decoration: underline var(--main-color) 2px;
     color: var(--contrast-color);
     text-align: center;
-    line-height: 3em;
 }
 
 .contact-lis{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    left: 10px;
+    width: 50%;
+    position: absolute;
 }
 
 /* Keeps the contact me section from smashing against the bottom */

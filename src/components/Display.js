@@ -38,8 +38,27 @@ export default function Display() {
       <div className="new-content">
         {renderContent()}
         </div>
-        <br></br>
-        <footer><h3 id="foot-text">Joey Fisher</h3></footer>
+        <br></br><br></br>
+        <footer>
+        <ul className="contact-lis">
+          <li>
+          <a className="contact-links" href="https://stackoverflow.com/users/17382534/joey-fisher" target="blank_" tabIndex="0">
+                    Stack Overflow
+                </a>
+          </li>
+          <li>
+          <a className="contact-links" href="https://github.com/jfisher37" target="blank_" tabIndex="0">
+                    Github
+                </a>
+          </li>
+          <li>
+          <a className="contact-links" href="https://www.linkedin.com/in/joseph-fisher-6217a063/" target="blank_" tabIndex="0">
+                    Linkedin
+                </a>
+          </li>
+      </ul>
+          
+          <h3 id="foot-text">Joey Fisher</h3></footer>
     </div>
   );
 }
