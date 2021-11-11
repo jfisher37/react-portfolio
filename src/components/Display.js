@@ -38,7 +38,7 @@ export default function Display() {
         {renderContent()}
         </div>
         <br></br>
-        <footer></footer>
+        <footer><h3 id="foot-text">Joey Fisher</h3></footer>
     </div>
   );
 }

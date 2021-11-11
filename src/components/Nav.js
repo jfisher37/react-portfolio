@@ -2,7 +2,8 @@ import React from "react";
 
 export default function Nav({ currentPage, setCurrentPage }) {
   return (
-    <ul>
+    <header>
+    <ul id="nav">
       <li>
         <a
           href="#about"
@@ -36,5 +37,6 @@ export default function Nav({ currentPage, setCurrentPage }) {
         <a href="assets/Resume_Coding.pdf" target="_blank">Resume</a>
       </li>
     </ul>
+    </header>
   );
 }

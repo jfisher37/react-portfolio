@@ -17,7 +17,11 @@
     line-height: 1.5em;
 }
 
- 
+ header{
+     background-color: var(--main-color);
+     height: 100px;
+     width: 100%
+ }
 
 .new-content{
     min-height: 100%;
@@ -31,7 +35,17 @@ footer{
     bottom: 0px;
     margin-bottom: -17px;
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     
+}
+
+#foot-text{
+    text-align: center;
+    color: var(--new-background);
+    font-size: 1.3em;
+    margin-right: 10px;
 }
 
 .new-container{
@@ -149,6 +163,20 @@ header nav {
 
     
 }
+
+#me-photo-contain{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#photo-of-me{
+    height: 300px;
+    width: auto;
+    border: var(--background) solid 2px;
+}
+
+
 /* a grid to divide the section titles from their respective content. */
 /* .grid-div{
     display: grid;
@@ -173,6 +201,9 @@ header nav {
     /* padding-left: 40px; 
     padding-right: 40px;  */
     color: var(--background);
+    font-size: 1.1em;
+    line-height: 2em;
+    margin: 0 40px;
 
 
 }
@@ -251,14 +282,16 @@ background-color: var(--main-color);
 display: inline-block;
 z-index: 1;
 position: relative;
+max-width: 75%;
 left: 14px;
 bottom: 150px;
-font-size: 1.7em;
+font-size: 1.5em;
 font-weight: 700;
 padding: 20px 30px;
 border-top: 2px solid var(--body-text);
 border-bottom: 2px solid var(--body-text);
 border-right: 2px solid var(--body-text);
+
 }
 
 /* orders the ul of contact info */
@@ -275,6 +308,14 @@ border-right: 2px solid var(--body-text);
     font-weight: 600;
     text-decoration: underline var(--main-color) 2px;
     color: var(--contrast-color);
+    text-align: center;
+    line-height: 3em;
+}
+
+.contact-lis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Keeps the contact me section from smashing against the bottom */
@@ -287,9 +328,7 @@ border-right: 2px solid var(--body-text);
    main{
        width: 95%;
    }
-   header{
-       height:150px;
-   }
+
 
    #wrap-header{
     display: flex;
@@ -346,23 +385,21 @@ border-right: 2px solid var(--body-text);
     }
 
     .app-title{
-        font-size: 1.2em;
+        font-size: auto;
+        padding: 10px 15px;
+        max-width: 75%;
         }
 
 
   }
+
+  
   
   /* Adjustments made for large smartphones*/
   @media screen and (max-width: 768px) {
    
-    header{
-        height:140px;
-    }
- 
 
-     header h1 {
-         font-size: 2.5em;
-     }
+ 
  
      #h1-box{
      background-color: var(--main-color);
@@ -411,14 +448,11 @@ border-right: 2px solid var(--body-text);
      }
  
      .app-title{
-         font-size: 1.2em;
+        font-size: 1em;
+        padding: 10px 15px;
+        max-width: 75%;
          }
  
-
-    .app-title{
-        font-size: .8em;
-       
-        }
 
     .side-text{
         font-size: 1.5em;
@@ -460,14 +494,11 @@ border-right: 2px solid var(--body-text);
         display: flex;
         justify-content: space-between;
     }
-    
-    #about-me-text{
-        font-size: .7em;
-    }
 
     .app-title{
         font-size: .7em;
         padding: 10px 15px;
+        max-width: 75%;
         }
 
     .side-text{
