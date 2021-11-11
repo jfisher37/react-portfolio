@@ -1,0 +1,580 @@
+:root{
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    --background: #f3ebcd;
+    --main-color: hsl(46, 57%, 62%);
+    --contrast-color: #dfdfe6;
+    --body-text: #977a18;
+    --new-background: rgb(75, 59, 59);
+
+}
+/* Basic text settings */
+
+
+* {
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+}
+
+ header{
+     background-color: var(--main-color);
+     height: 120px;
+     width: 100%
+ }
+
+.new-content{
+    min-height: 100%;
+    margin-bottom: 10px;
+    
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 65%;
+    align-items: center;
+}
+
+footer{
+    height: 40px;
+    width: 100%;
+    background-color: var(--main-color);
+    bottom: 0px;
+    margin-bottom: -17px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+#foot-text{
+    text-align: center;
+    color: var(--new-background);
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+
+.new-container{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    color: var(--background);
+    font-size: 2em;
+    text-align: center;
+    border-bottom: dashed var(--main-color);
+}
+
+#title {
+    background-color: var(--body-text);
+    display: block;
+    border: unset;
+    text-align: center;
+    border-bottom: solid var(--new-background) 2px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--new-background) ;
+    margin: 0;
+    position: relative;
+}
+
+.navbar{
+    background-color: rgb(75, 59, 59) !important;
+}
+.navbar-brand{
+    margin-left: 20px;
+    margin-right: 60vw;
+    font-size: 1.5em;
+    color: var(--background) !important;
+}
+
+.nav-link{
+    color: var(--background) ;
+    background-color: var(--body-text);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 7px;
+    border: var(--new-background) solid 2px;
+}
+
+.active{
+    background-color: var(--contrast-color);
+    color: var(--new-background)
+}
+
+.carousel{
+    height: 30vh !important;
+    background-color: var(--background);
+}
+
+.carousel-inner{
+    height: 100%;
+    background-color: var(--background);
+}
+
+.carousel-item{
+    height: 100%;
+    background-color: var(--background);
+}
+
+.sr-only{
+    color: var(--new-background);
+}
+
+.carou-cap{
+    color: var(--new-background) !important;
+    background-color: var(--main-color);
+    border: solid black 1px;
+    width: 150px;
+    height: 36px;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 0;
+    
+}
+
+#contact-error-message{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-img{
+    height: 100% !important;
+    width: auto !important;
+    margin: 0 auto !important;
+}
+
+
+#subheader h2:hover + #me-photo,
+#subheader h2:focus + #me-photo {
+ display: inline-block;
+  
+}
+
+
+header nav {
+    position: relative;
+    display: block;
+    right: 40px;
+    top: 40px;
+    margin-left: 60px;
+}
+
+.navbar-nav{
+   display: flex;
+   justify-content: right;
+}
+
+/* background image for subheader */
+#subheader{
+    width: 100%;
+    height: 130px;
+    background-image: url(./images/alt-background-img.png);
+    background-position: bottom 80% right 20%;
+  
+   
+}
+/* subheader text */
+#subheader h2{
+    position: absolute;
+    top: 140px;
+    right: 70px;
+    font-size: 1.7em;
+    text-align: right;
+    background-color: var(--main-color);
+    color: var(--contrast-color);
+    text-decoration: underline;
+    cursor: grab;
+
+    
+}
+
+#me-photo-contain{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#photo-of-me{
+    height: 300px;
+    width: auto;
+    border: var(--background) solid 2px;
+}
+
+
+/* a grid to divide the section titles from their respective content. */
+/* .grid-div{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+} */
+/* section titles */
+/* .side-text{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 3em;
+    text-align: right;
+    margin-right: 30px;
+    color: var(--background);
+
+} */
+/* Places the section contents to the right of the titles, creates dashed border. */
+.central-content{
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+    /* border-left: 4px dashed var(--main-color);*/
+    /* padding-left: 40px; 
+    padding-right: 40px;  */
+    color: var(--background);
+    font-size: 1.1em;
+    line-height: 2em;
+    margin: 0 40px;
+
+
+}
+
+.portfolio-item{
+    margin: 25px
+}
+
+section {
+    margin-bottom: 2em;
+}
+/* Creates a sub-grid for the diffrent apps in the portfolio */
+#apps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+}
+
+#app1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+#app2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#app3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#app4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#app5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#app6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.app-imgs {
+    position:relative;
+    width: 100%;
+    height: 90%;
+    filter:blur(2px);
+    margin-right: 50px;
+    padding: 15px;
+    cursor: grab;
+
+}
+/* removes blur from hovered/focused images */
+.app-imgs:hover,
+.app-imgs:focus{
+    filter: blur(0);
+}
+/* titles of the apps */
+.app-title{
+color: var(--body-text);
+background-color: var(--main-color);
+display: inline-block;
+z-index: 1;
+position: relative;
+max-width: 75%;
+left: 14px;
+bottom: 150px;
+font-size: 1.5em;
+font-weight: 700;
+padding: 20px 30px;
+border-top: 2px solid var(--body-text);
+border-bottom: 2px solid var(--body-text);
+border-right: 2px solid var(--body-text);
+
+}
+
+/* orders the ul of contact info */
+#contact-contain{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* a bit of a misnomer. They're not all links. */
+.contact-links {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: underline var(--main-color) 2px;
+    color: var(--contrast-color);
+    text-align: center;
+}
+
+.contact-lis{
+    display: flex;
+    justify-content: space-between;
+    left: 10px;
+    width: 50%;
+    position: absolute;
+}
+
+/* Keeps the contact me section from smashing against the bottom */
+#contact-me{
+    padding-bottom: 70px;
+}
+
+/* Adjustments made for tablets  */
+@media screen and (max-width: 992px) {
+   main{
+       width: 95%;
+   }
+
+
+   #wrap-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #h1-box{
+    background-color: var(--main-color);
+    position: relative;
+    top: 7px;
+    padding: 7px 10px 7px 10px;
+    margin: 0 25%;
+    }
+
+
+    header nav {
+        position: relative;
+        display: block;
+        bottom: .5em;
+        margin: 0 25% 0 30%;
+
+    }
+
+    #subheader{
+        height: 100px;
+
+       
+    }
+    
+    #subheader h2{
+        position: relative;
+        font-size: 1.4em;
+        top: 1em;
+        right: auto;
+        text-align: center;
+        width: 30%;
+        margin: 0 auto;
+        display: block;
+        
+    }
+
+    .side-text{
+        font-size: 2em;
+        text-align: right;
+    
+    }
+    
+    /* .contact-links {
+        font-size: .8em;
+        font-weight: 600;
+    } */
+
+    .app-title{
+        font-size: auto;
+        padding: 10px 15px;
+        max-width: 75%;
+        }
+
+
+  }
+
+  
+  
+  /* Adjustments made for large smartphones*/
+  @media screen and (max-width: 768px) {
+   
+
+ 
+ 
+     #h1-box{
+     background-color: var(--main-color);
+     position: relative;
+     top: 7px;
+     padding: 7px 10px 7px 10px;
+     margin: 0 25%;
+     }
+     
+     .contact-links {
+         font-size: .85em;
+     }
+ 
+     header nav {
+         position: relative;
+         display: block;
+         bottom: .5em;
+         margin: 0 25% 0 30%;
+ 
+     }
+ 
+     #subheader{
+         height: 80px;
+ 
+        
+     }
+     
+     #subheader h2{
+         position: relative;
+         font-size: 1.2em;
+         top: 1em;
+         right: auto;
+         text-align: center;
+         width: 30%;
+         margin: 0 auto;
+         display: block;
+         
+     }
+ 
+     .side-text{
+         font-size: 2em;
+         text-align: right;
+     
+     }
+/*      
+     .contact-links {
+         font-size: .8em;
+         font-weight: 600;
+     } */
+ 
+     .app-title{
+        font-size: 1em;
+        padding: 10px 15px;
+        max-width: 75%;
+         }
+ 
+
+    .side-text{
+        font-size: 1.5em;
+    
+    }
+
+    /* .contact-links {
+        font-size: .7em;
+        font-weight: 500;
+    } */
+  }
+  
+  /* Adjustments made for small smartphones */
+  @media screen and (max-width: 576px) {
+
+    header{
+        height: 140px;
+    }
+
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    #subheader h2{
+        font-size: 1em;
+        
+    }
+
+    #nav {
+        /* margin-top: 5px; */
+        flex-direction: column;
+    }
+
+    .nav-link{
+        background-color: unset;
+        border: unset;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    header nav{
+
+        margin-left: 37%;
+    }
+
+    nav ul{
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .app-title{
+        font-size: .7em;
+        padding: 10px 15px;
+        max-width: 75%;
+        }
+
+    .side-text{
+        font-size: 1em;
+        margin-right: 10px;
+    }
+
+    #contact-contain{
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    /* .contact-links{
+        font-size: .7em;
+        line-height: 3em;
+       
+    } */
+
+    
+  }
